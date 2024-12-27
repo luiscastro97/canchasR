@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas de Canchas Sintéticas</title>
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Reservas de Canchas Sintéticas</h1>
+        </header>
+
+        <section id="reservation-form">
+            <h2>Hacer una Reserva</h2>
+            <form id="formReserva">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="fecha">Fecha de Reserva:</label>
+                <input type="date" id="fecha" required>
+
+                <label for="hora">Hora de Reserva:</label>
+                <input type="time" id="hora" required>
+
+                <button type="submit">Reservar</button>
+            </form>
+        </section>
+
+        <section id="reservas">
+            <h2>Reservas Realizadas</h2>
+            <table id="reservasTable">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Las reservas se llenarán aquí dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
